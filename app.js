@@ -19,9 +19,13 @@
 // // Will return True
 // console.log(5 < 10)
 
-let name = 'Ibrahim'
-let temperature = 15
-let planetName ='Mars'
+// let name = 'Ibrahim'
+// let temperature = 15
+// let planetName ='Mars'
 
-temperature = temperature + 5
-console.log(temperature)
+// temperature = temperature + 5
+// console.log(temperature)
+
+let celsius = 10;
+let farrenheit = celsius * 1.8 + 32;
+console.log(farrenheit);
