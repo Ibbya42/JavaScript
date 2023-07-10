@@ -31,14 +31,18 @@
 // let farrenheit = celsius * 1.8 + 32;
 // console.log(farrenheit);
 
-// If else statement
-// let number = 5;
-// let number2 = 6;
+// If Else Statement
+// let cash = 35;
+// let price = 40;
+// let difference = cash - price;
 
-// if (number < number2){
-//     console.log('Number 1 is smaller than number 2');
+// if (cash > price){
+//     console.log(`You paid extra - here is ${difference} dollars change`)
+// }
+// else if (cash === price){
+//     console.log('You have paid the correct Amount')
 // }
 // else{
-//     console.log('Number 2 is bigger than number 1');
+//     console.log(`Not enough cash, you still require ${difference * -1 } dollars`)
 // }
 
