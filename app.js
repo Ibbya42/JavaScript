@@ -26,7 +26,19 @@
 // temperature = temperature + 5
 // console.log(temperature)
 
-let celsius = 10;
-let farrenheit = celsius * 1.8 + 32;
-console.log(farrenheit);
+// Conversion Exercise
+// let celsius = 10;
+// let farrenheit = celsius * 1.8 + 32;
+// console.log(farrenheit);
+
+// If else statement
+// let number = 5;
+// let number2 = 6;
+
+// if (number < number2){
+//     console.log('Number 1 is smaller than number 2');
+// }
+// else{
+//     console.log('Number 2 is bigger than number 1');
+// }
 
