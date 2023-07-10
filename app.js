@@ -46,3 +46,11 @@
 //     console.log(`Not enough cash, you still require ${difference * -1 } dollars`)
 // }
 
+let cash = 60;
+let price = 50;
+let inStock = false; 
+
+if (cash >= price || inStock === true){
+    console.log("There is stock and we have enough to purchase the product");
+}
+
