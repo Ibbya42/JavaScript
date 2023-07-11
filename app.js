@@ -76,24 +76,29 @@
 // }
 
 
-for ( let i = 1 ; i <=20 ; i++){   
+// for ( let i = 1 ; i <=20 ; i++){   
 
-     if (i % 5 == 0 && i % 3 == 0) {
-        console.log('Frontend Simplified');
-    }
+//      if (i % 5 == 0 && i % 3 == 0) {
+//         console.log('Frontend Simplified');
+//     }
 
-   else if (i % 3 == 0) {
-        console.log('Frontend');
-    }
+//    else if (i % 3 == 0) {
+//         console.log('Frontend');
+//     }
 
-    else if (i % 5 == 0) {
-        console.log('Simplified');
-    }
+//     else if (i % 5 == 0) {
+//         console.log('Simplified');
+//     }
 
-    else{
-        console.log(i);
-    } 
+//     else{
+//         console.log(i);
+//     } 
 
+// }
+
+
+const str = 'Frontend Simplified'
+
+for ( let i = 0; i <19 ; i++){
+    console.log(str[i]);
 }
-
-
