@@ -97,8 +97,36 @@
 // }
 
 
-const str = 'Frontend Simplified';
+// const str = 'Frontend Simplified';
 
-for ( let i = 0; i <19 ; i++){
-    console.log(str[i]);
+// for ( let i = 0; i <19 ; i++){
+//     console.log(str[i]);
+// }
+
+// // Define the function 
+// function welcometoFES(name , age ){
+//     console.log(`Welcome to ESR, ${name}. I am ${age} years old`)
+// }
+
+// // Calling the function 
+// welcometoFES('Ibrahim', '22');
+// welcometoFES('John' , '30');
+
+// function calculation(sum1 , sum2){
+//     return sum1 + sum2;
+// }
+
+// console.log(calculation(10 , 20));
+
+
+
+// Defined the function celsius which will hold the data 
+function calculation(celsius){
+    // Using the data in celsius to complete the equation to get the fahrenheit temperature
+    return celsius * 1.8 + 32
 }
+
+// Calling the function celcius with its valued amount
+console.log(calculation(0))
+console.log(calculation(10))
+console.log(calculation(30))
