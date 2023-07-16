@@ -139,13 +139,11 @@
 // console.log(calculation(10))
 // console.log(calculation(30))
 
-// Arrays 
+// // Arrays 
+// let arr = [20 , 40 , 60, 80 , 100];
+// console.log(arr[arr.length -1])
+// console.log(arr[0]);
 
-let arr = [20 , 40 , 60, 80 , 100];
-
-console.log(arr[arr.length -1])
-console.log(arr[0]);
-
-arr.push(150);
-
-console.log(arr);
+// // Add another element to the array
+// arr.push(150);
+// console.log(arr);
