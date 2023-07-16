@@ -147,3 +147,26 @@
 // // Add another element to the array
 // arr.push(150);
 // console.log(arr);
+
+// Array Filters
+
+// let arr = [20 , 40 , 60, 80 , 100];
+
+// let newArr = arr.filter(element => {
+// return element < 50
+// })
+
+// console.log(newArr)
+
+
+let grade = ['A+' , 'A' , 'FAIL'];
+
+let ggrade = grade.filter( (element) => {
+console.log(element)
+
+if (element !== 'FAIL'){
+    return true;
+}
+})
+
+console.log(ggrade)
