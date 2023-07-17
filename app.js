@@ -159,14 +159,22 @@
 // console.log(newArr)
 
 
-let grade = ['A+' , 'A' , 'FAIL'];
+// let grade = ['FAIL'];
 
-let ggrade = grade.filter( (element) => {
-console.log(element)
+// let failgrade = grade.filter (element => {
+//     return element !== 'FAIL'
+// })
 
-if (element !== 'FAIL'){
-    return true;
-}
-})
+// console.log(failgrade)
 
-console.log(ggrade)
+// let grade = ['A+', 'A', 'FAIL']
+// let goodgrade = [];
+
+// for (let i = 0; i < grade.length; i++){
+//     if (grade[i] === 'A'){
+//         goodgrade.push(grade[i])
+//     }
+// }
+
+// console.log(goodgrade)
+
