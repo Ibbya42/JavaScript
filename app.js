@@ -185,11 +185,11 @@
 // console.log(cents)
 
 
-let dollars = [ 1 , 5 , 10 , 3]
-let cents = []
+// let dollars = [ 1 , 5 , 10 , 3]
+// let cents = []
 
-for ( i = 0; i < dollars.length ; i++){
-    cents.push(dollars[i] * 100)
-}
+// for ( i = 0; i < dollars.length ; i++){
+//     cents.push(dollars[i] * 100)
+// }
 
-console.log(cents)
+// console.log(cents)
