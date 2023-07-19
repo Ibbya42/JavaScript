@@ -197,23 +197,28 @@
 
 // Objects
 
-// let user =[
-// {
-//     username: 'Ibrahim', 
-//     email: 'ibrahimsaheed831@outlook.com',
-//     subscriptionstatus: 'VIP',
-//     id: '429000',
-//     lessoncompleted: [0 , 1]
-// },
+let user =[
+{
+    username: 'Ibrahim', 
+    email: 'ibrahimsaheed831@outlook.com',
+    password: 'test123',
+    subscriptionstatus: 'VIP',
+    id: '429000',
+    lessoncompleted: [0 , 1]
+},
 
-// {
-//     username: 'John', 
-//     email: 'Johncena@outlook.com',
-//     subscriptionstatus: 'VIP',
-//     id: '421234509000',
-//     lessoncompleted: [0 , 1 , 3]
-// }
+{
+    username: 'John', 
+    email: 'Johncena@outlook.com',
+    password: 'test321',
+    subscriptionstatus: 'VIP',
+    id: '421234509000',
+    lessoncompleted: [0 , 1 , 3]
+}
 
-// ]
+]
 
-// console.log(user[0].username)
+function login(email , password){
+    console.log(email,password);
+}
+
