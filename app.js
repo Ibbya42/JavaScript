@@ -218,7 +218,26 @@ let user =[
 
 ]
 
+// Create a function that collects the email and password 
 function login(email , password){
-    console.log(email,password);
+    // Loops through all the emails and password in the object 
+    for ( let i = 0; i < user.length; ++i){
+        // if the email from the users array matches the email given in the 
+        // login function print out the details 
+        if ( user[i].email === email){
+         console.log(user[i]);
+        //  Also if the password matches with the details in the login function 
+        // release an output stating the credentials are correct 
+         if (user[i].password === password){
+            console.log('Details correct, Logging user in')
+         }
+        //  If either of the details are wrong - Print this statement 
+         else{
+            console.log("Incorrect email or password")
+         }
+        }
+    }
 }
+
+login('ibrahimsaheed831@outlook.com' , 'test123');
 
