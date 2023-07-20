@@ -197,6 +197,7 @@
 
 // Objects
 
+// User object that has the exisiting data 
 let user =[
 {
     username: 'Ibrahim', 
@@ -218,26 +219,63 @@ let user =[
 
 ]
 
-// Create a function that collects the email and password 
-function login(email , password){
-    // Loops through all the emails and password in the object 
-    for ( let i = 0; i < user.length; ++i){
-        // if the email from the users array matches the email given in the 
-        // login function print out the details 
-        if ( user[i].email === email){
-         console.log(user[i]);
-        //  Also if the password matches with the details in the login function 
-        // release an output stating the credentials are correct 
-         if (user[i].password === password){
-            console.log('Details correct, Logging user in')
-         }
-        //  If either of the details are wrong - Print this statement 
-         else{
-            console.log("Incorrect email or password")
-         }
-        }
-    }
+// // Create a function that collects the email and password 
+// function login(email , password){
+//     // Loops through all the emails and password in the object 
+//     for ( let i = 0; i < user.length; ++i){
+//         // if the email from the users array matches the email given in the 
+//         // login function print out the details 
+//         if ( user[i].email === email){
+//          console.log(user[i]);
+//         //  Also if the password matches with the details in the login function 
+//         // release an output stating the credentials are correct 
+//          if (user[i].password === password){
+//             console.log('Details correct, Logging user in')
+//          }
+//         //  If either of the details are wrong - Print this statement 
+//          else{
+//             console.log("Incorrect email or password")
+//          }
+//         //  Add return statament so that the loop stops running after finding the 
+//         // correct details or has ended the cycle. 
+//          return;
+//         }
+//     }
+//     // Statment if no email is found outside of the for loop
+//     console.log('Email not found')
+// }
+
+// login('ibrahimsaheed831@outlook.com' , 'test123');
+
+// Create a register function to take all the parameters in from the user object
+function register (name , email , password , subscriptionStatus , id , lessonCompleted){
+    // Test to see if the email and password are working
+    console.log( email, password);
+
+    // Declaring an array where the information from the register will be pushed onto user object. 
+    // The username from the user object will equal to the name in the register function. 
+    let users = {
+        username: name,
+        email: email,
+        password: password,
+        subscriptionStatus: subscriptionStatus,
+        id: id, 
+        lessonCompleted: lessonCompleted
+    }   
+    // The data from users will be pushed into the user object (Exisiting List)
+    user.push(users)
 }
 
-login('ibrahimsaheed831@outlook.com' , 'test123');
+// The register function that will add all the data from users. 
+register
+ (
+    'John', 
+    'Johncena@outlook.com' , 
+    'test321',
+    'Basic' , 
+    '323443' , 
+    [0 , 1, 2]
+ );
 
+//  Print out users after the addition. 
+console.log(user);
