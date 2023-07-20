@@ -248,34 +248,43 @@ let user =[
 // login('ibrahimsaheed831@outlook.com' , 'test123');
 
 // Create a register function to take all the parameters in from the user object
-function register (name , email , password , subscriptionStatus , id , lessonCompleted){
-    // Test to see if the email and password are working
-    console.log( email, password);
+function register (users){
+     user.push(users);
+}
+
 
     // Declaring an array where the information from the register will be pushed onto user object. 
     // The username from the user object will equal to the name in the register function. 
-    let users = {
-        username: name,
-        email: email,
-        password: password,
-        subscriptionStatus: subscriptionStatus,
-        id: id, 
-        lessonCompleted: lessonCompleted
-    }   
-    // The data from users will be pushed into the user object (Exisiting List)
-    user.push(users)
-}
+    // let users = {
+    //     username: name,
+    //     email: email,
+    //     password: password,
+    //     subscriptionStatus: subscriptionStatus,
+    //     id: id, 
+    //     lessonCompleted: lessonCompleted
+    // }   
+   
 
 // The register function that will add all the data from users. 
 register
- (
-    'John', 
-    'Johncena@outlook.com' , 
-    'test321',
-    'Basic' , 
-    '323443' , 
-    [0 , 1, 2]
- );
+ ({
+     username:'John', 
+     email:'Johncena@outlook.com' , 
+     password: 'test321',
+     subscriptionStatus: 'Basic' , 
+     id: '323443' , 
+     lessonCompleted: [0 , 1, 2]
+ });
+
+ register
+ ({
+     username:'John', 
+     email:'Johncena@outlook.com' , 
+     password: 'test321',
+     subscriptionStatus: 'Basic' , 
+     id: '323443' , 
+     lessonCompleted: [0 , 1, 2]
+ });
 
 //  Print out users after the addition. 
 console.log(user);
