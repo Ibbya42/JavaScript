@@ -248,9 +248,9 @@ let user =[
 // login('ibrahimsaheed831@outlook.com' , 'test123');
 
 // Create a register function to take all the parameters in from the user object
-function register (users){
-     user.push(users);
-}
+// function register (users){
+//      user.push(users);
+// }
 
 
     // Declaring an array where the information from the register will be pushed onto user object. 
@@ -265,26 +265,37 @@ function register (users){
     // }   
    
 
-// The register function that will add all the data from users. 
-register
- ({
-     username:'John', 
-     email:'Johncena@outlook.com' , 
-     password: 'test321',
-     subscriptionStatus: 'Basic' , 
-     id: '323443' , 
-     lessonCompleted: [0 , 1, 2]
- });
+// // The register function that will add all the data from users. 
+// register
+//  ({
+//      username:'John', 
+//      email:'Johncena@outlook.com' , 
+//      password: 'test321',
+//      subscriptionStatus: 'Basic' , 
+//      id: '323443' , 
+//      lessonCompleted: [0 , 1, 2]
+//  });
 
- register
- ({
-     username:'John', 
-     email:'Johncena@outlook.com' , 
-     password: 'test321',
-     subscriptionStatus: 'Basic' , 
-     id: '323443' , 
-     lessonCompleted: [0 , 1, 2]
- });
+//  register
+//  ({
+//      username:'John', 
+//      email:'Johncena@outlook.com' , 
+//      password: 'test321',
+//      subscriptionStatus: 'Basic' , 
+//      id: '323443' , 
+//      lessonCompleted: [0 , 1, 2]
+//  });
 
-//  Print out users after the addition. 
-console.log(user);
+// //  Print out users after the addition. 
+// console.log(user);
+
+
+// First way to accessing an element 
+console.log(document.querySelector('#title'))
+console.log(document.querySelector('.title'))
+
+
+// Second way to accessing an element 
+// This only works if the element has an id
+
+console.log(document.getElementById('title'))
