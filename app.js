@@ -290,12 +290,16 @@ let user =[
 // console.log(user);
 
 
-// First way to accessing an element 
-console.log(document.querySelector('#title'))
-console.log(document.querySelector('.title'))
+// // First way to accessing an element 
+// console.log(document.querySelector('#title'))
+// console.log(document.querySelector('.title'))
 
 
-// Second way to accessing an element 
-// This only works if the element has an id
+// // Second way to accessing an element 
+// // This only works if the element has an id
 
-console.log(document.getElementById('title'))
+// console.log(document.getElementById('title'))
+
+document.querySelector('.title').innerHTML = 'Title has been changed';
+
+document.querySelector('.title').style.color = 'red';
