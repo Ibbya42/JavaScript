@@ -300,6 +300,11 @@ let user =[
 
 // console.log(document.getElementById('title'))
 
-document.querySelector('.title').innerHTML = 'Title has been changed';
+// document.querySelector('.title').innerHTML = 'Title has been changed';
+// document.querySelector('.title').style.color = 'red';
 
-document.querySelector('.title').style.color = 'red';
+function changetitletored(){
+    document.querySelector('.title').style.color = 'red';
+    console.log('Clicked');
+}
+
