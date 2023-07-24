@@ -9,16 +9,19 @@ const emailRef = document.querySelector('.email')
 // 1. Then 
 
 // Fetch the data from the backend
-fetch("https://jsonplaceholder.typicode.com/users/1").then(response => {
-//    Makes the dataset compatibale with the frontend 
-    response.json().then((data) => {
-        console.log(data)
-        // The email ref will add the data from the dataset
-        // and call it onto the frontend
-        emailRef.innerHTML = data.email
-    })
+fetch("https://jsonplaceholder.typicode.com/users/1")
+// Unlock the data from the backend 
+.then((response) => {
+    // Helps change the data into the actual text
+    return response.json();
 })
-
+// Need to use .then again as the json above turns the whole code into a promise. 
+    .then((data) => {
+        // Print out the data
+        console.log(data);
+        // call email ref to add email address onto .email on html fle
+        emailRef.innerHTML = data.email
+    });
 
 
 // 1. Async/Await
