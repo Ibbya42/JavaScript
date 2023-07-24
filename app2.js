@@ -31,7 +31,10 @@
         // To unlock the data we can use a variable which equal to the data that is being 
         // fetched. 
         const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
-        console.log(response.json())
+        const data = await response.json()
+        console.log(data)
+        
+        
     }
 
     main()
