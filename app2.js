@@ -42,7 +42,7 @@
     // }
 
     // main()
-
+    // const statusRef = document.querySelector('.status')
 
     // // Created a function to get Subscription list
     // function getSubscriptionStatus() {
@@ -62,26 +62,48 @@
 
     // main();
 
-    const Subscriptionstatus = document.querySelector('.status')
+    const statusRef = document.querySelector('.status')
+    const videoRef = document.querySelector('.video')
+    
+    // Created a function to get Subscription list
+    function getSubscriptionStatus() {
+        // Created a promise to add the data
+        return new Promise((resolve , reject) => {
+            resolve('Vip')
+        })
+    }
 
-    function getVideo() {
+    // Creating a function getvideo with a subscriptionstatus parameter
+    function getVideo(Subscriptionstatus) {
     return new Promise((resolve , reject) => {
         if ( Subscriptionstatus === 'Free'){
             resolve('Show Trailer')
         }
 
-        if ( Subscriptionstatus === 'Vip'){
+        else if ( Subscriptionstatus === 'Vip'){
             resolve('Show Video')
         }
 
-        else console.log ('No video')
+        else {
+            reject('No video')
+        }
     })
     }
 
     async function main() {
-        const status = await getVideo();
-        Subscriptionstatus.innerHTML = status;
+        const status = await getSubscriptionStatus();
+        statusRef.innerHTML = status;
+        // Will try to catch the backend data and print out on the html 
+       try{
+        console.log(await getVideo(status))
+       }
+    //    Will print out the error if no data is found or a reject is used 
+       catch(e){
+        console.log(e)
+        videoRef.innerHTML = e;
+       }
 
     }
 
     main();
+
